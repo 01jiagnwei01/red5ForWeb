@@ -36,6 +36,19 @@ repositories {
 }
 
 dependencies {
+	compile 'org.springframework:spring-webmvc:4.1.6.RELEASE';
+	compile 'org.springframework:spring-tx:4.1.6.RELEASE';
+	compile 'org.springframework:spring-aop:4.1.6.RELEASE';
+	compile 'org.springframework:spring-jdbc:4.1.6.RELEASE';
+	compile 'org.springframework:spring-orm:4.1.6.RELEASE';
+	compile 'org.springframework:spring-web:4.1.6.RELEASE';
+	compile 'org.springframework:spring-context:4.1.6.RELEASE';
+	compile 'org.springframework:spring-test:4.1.6.RELEASE';
+	compile 'org.springframework:spring-beans:4.1.6.RELEASE';
+	compile 'org.springframework:spring-context-support:4.1.6.RELEASE';
+	compile 'org.springframework:spring-core:4.1.6.RELEASE';
+	
+	
 	//red5
 	compile 'org.red5:red5-io:1.0.5-RELEASE'
 	compile 'org.red5:red5-server:1.0.5-RELEASE'

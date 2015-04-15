@@ -7,6 +7,7 @@
 <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 <link rel="icon" type="image/png" href="favicon.png">
 <title>Red5 - OFLADemo</title>
+<%request.setAttribute("www", "localhost"); %>
 <style type="text/css">
 <!--
 body {
@@ -89,7 +90,7 @@ a {
   jwplayer('mediaspace').setup({
     'flashplayer': '<%=request.getContextPath() %>/resources/red5/player.swf',
     'file': 'Avengers2.mp4',
-    'streamer': 'rtmp://${www}/default',
+    'streamer': 'rtmp://${www}/r5',
     'controlbar': 'bottom',
     'width': '848',
     'height': '360'
