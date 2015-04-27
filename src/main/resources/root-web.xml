@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="location" value="/WEB-INF/red5-web.properties" />
+	</bean>
+    <!-- ROOT web context -->
+
+    <bean
+        id="web.context.r5"
+        class="org.red5.server.Context" >
+
+        <property
+            name="scopeResolver"
+            ref="red5.scopeResolver" />
+
+        <property
+            name="clientRegistry"
+            ref="global.clientRegistry" />
+
+        <property
+            name="serviceInvoker"
+            ref="global.serviceInvoker" />
+
+        <property
+            name="mappingStrategy"
+            ref="global.mappingStrategy" />
+    </bean>
+
+    <bean
+        id="web.scope.r5"
+        class="org.red5.server.WebScope"
+        init-method="register" >
+
+        <property
+            name="server"
+            ref="red5.server" />
+
+        <property
+            name="parent"
+            ref="global.scope" />
+
+        <property
+            name="context"
+            ref="web.context.r5" />
+
+        <property
+            name="handler"
+            ref="global.handler" />
+
+        <property
+            name="contextPath"
+            value="${webapp.contextPath}" />
+
+        <property
+            name="virtualHosts"
+            value="${webapp.virtualHosts}" />
+    </bean>
+    
+    <bean id="web.handler.chapter2"  class="com.gxkj.red5.applications.NewTaoBaoApplication" singleton="true" /> 
+
+</beans>

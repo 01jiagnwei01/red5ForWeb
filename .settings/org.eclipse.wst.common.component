@@ -5,199 +5,202 @@
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
 		<wb-resource deploy-path="/" source-path="WebContent"/>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.6.RELEASE/e1ee19a5359f214d65cc18972df8aba17ce1e423/spring-webmvc-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.6.RELEASE/b5beecfa930e0e2ce6fb3999eee3f69c4776e6be/spring-tx-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-tx/4.1.6.RELEASE/spring-tx-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.6.RELEASE/686c13ba57d9423dede9c5d580dcadc5c67a2761/spring-aop-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.6.RELEASE/895d8f28e64c0445e3ee9461963406123f06821c/spring-jdbc-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-orm/4.1.6.RELEASE/d5b70acee6ddfab47786c31114c89b895654cb97/spring-orm-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-orm/4.1.6.RELEASE/spring-orm-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.6.RELEASE/960101b25d0ec6f45d550bf92c00de8c6a584e6a/spring-web-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.6.RELEASE/15f0b22bf89ed468badbc4eec759af2b916d33e4/spring-context-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-test/4.1.6.RELEASE/89612cafdac51bc92d9bd512e1863a9111a08b4e/spring-test-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.6.RELEASE/ce2d409d470948f11fad41ffdf37dcff4d28cd7c/spring-beans-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.6.RELEASE/9beaafd3f01cd377e36a2b1a9aed7c2c87111165/spring-context-support-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-context-support/4.1.6.RELEASE/spring-context-support-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.6.RELEASE/e2f486124d5dea2d91a9c2ea7d4456bc343ca2cc/spring-core-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.red5/red5-io/1.0.5-RELEASE/6f22d7d734e06101c10b681515327d9019e3b2a8/red5-io-1.0.5-RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/red5/red5-io/1.0.5-RELEASE/red5-io-1.0.5-RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.red5/red5-server/1.0.5-RELEASE/c030326517287e7374a92faff801bebaf3dd9111/red5-server-1.0.5-RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/red5/red5-server/1.0.5-RELEASE/red5-server-1.0.5-RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.red5/red5-server-common/1.0.5-RELEASE/525b1ab2c9db6a3fe659246f1e1d18726872c25b/red5-server-common-1.0.5-RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/red5/red5-server-common/1.0.5-RELEASE/red5-server-common-1.0.5-RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.red5/red5-service/1.0.5-RELEASE/cec1105251dca1518199b2b7172f1c99dae65039/red5-service-1.0.5-RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/red5/red5-service/1.0.5-RELEASE/red5-service-1.0.5-RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.red5/red5-client/1.0.5-RELEASE/813805e3b89358fdde9166106d11f854347dbb42/red5-client-1.0.5-RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/red5/red5-client/1.0.5-RELEASE/red5-client-1.0.5-RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.3.7/feb6df9c6936c797159091a451ed8590d67101dc/groovy-all-2.3.7.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.3/e3c02049f2dbbc764681b40094ecf0dcbc99b157/logback-core-1.1.3.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/ch.qos.logback/logback-access/1.1.3/6276adcd1a218fa6d15af113a99b2dcecb569508/logback-access-1.1.3.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/ch/qos/logback/logback-access/1.1.3/logback-access-1.1.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.3/d90276fff414f06cb375f2057f6778cd63c6082f/logback-classic-1.1.3.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/ch.qos.logback/logback-site/1.1.3/25a239b585069960f8f704b711d0019dccdc6e21/logback-site-1.1.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.6.RELEASE/8bf70887c2c883a6f6e552dbe46eec35c07adf6a/spring-expression-4.1.6.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.9.1/1b8d6ec3a4e02958af7fd2b0b944056bbd08d5e0/ehcache-2.9.1.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/admin/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/aopalliance/aopalliance/1.0/aopalliance-1.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.51/9ab8afcc2842d5ef06eb775a0a2b12783b99aa80/bcprov-jdk15on-1.51.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/commons-logging/commons-logging/1.2/commons-logging-1.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.9/872ec63b41181e29ad5a3723f1417356e2d2c0f2/slf4j-api-1.7.9.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.9/f7c71870af3c344108412b745c8d13f5defffab5/jcl-over-slf4j-1.7.9.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/slf4j/slf4j-api/1.7.9/slf4j-api-1.7.9.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.9/ed78d66f1e5cb6ee901dc4810d0b96ad557fdc12/jul-to-slf4j-1.7.9.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/slf4j/jcl-over-slf4j/1.7.9/jcl-over-slf4j-1.7.9.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.9/cee023442a5c5c5735f5262ec0aae5d21c276104/log4j-over-slf4j-1.7.9.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/slf4j/jul-to-slf4j/1.7.9/jul-to-slf4j-1.7.9.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.apache.mina/mina-core/2.0.8/d6ff69fa049aeaecdf0c04cafbb1ab53b7487883/mina-core-2.0.8.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/slf4j/log4j-over-slf4j/1.7.9/log4j-over-slf4j-1.7.9.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.apache.mina/mina-integration-beans/2.0.8/14d8415dfd84e6d634b6a9ef90c700655b185d5/mina-integration-beans-2.0.8.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/apache/mina/mina-core/2.0.8/mina-core-2.0.8.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.apache.mina/mina-integration-jmx/2.0.8/c7a14cc3af67132f87f24469ee3027b930d0ebd3/mina-integration-jmx-2.0.8.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/apache/mina/mina-integration-beans/2.0.8/mina-integration-beans-2.0.8.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.2/7a87d845ad3a155297e8f67d9008f4c1e5656b71/commons-beanutils-1.9.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/apache/mina/mina-integration-jmx/2.0.8/mina-integration-jmx-2.0.8.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.6/16390e2d74df4ab08c06a85d42a74a951dc93ad7/commons-pool-1.5.6.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/commons-codec/commons-codec/1.9/commons-codec-1.9.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.antlr/antlr/3.1.3/5ea4318579f620e4c07f39a860a20bba1fb19ab6/antlr-3.1.3.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/commons-pool/commons-pool/1.5.6/commons-pool-1.5.6.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2.2/d456bb230c70c0b95c76fb28e429d42f275941/cglib-nodep-2.2.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/antlr/antlr/3.1.3/antlr-3.1.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.1.7/d096220c97746b7c586cac6411afd5eca80eb4f1/quartz-2.1.7.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/admin/.m2/repository/org/jaudiotagger/2.0.4-SNAPSHOT/jaudiotagger-2.0.4-SNAPSHOT.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/quartz-scheduler/quartz/2.1.7/quartz-2.1.7.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/7bc7e49ddfe4fb5f193ed37ecc96c12292c8ceb6/xercesImpl-2.9.1.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/jaudiotagger/2.0.4-SNAPSHOT/jaudiotagger-2.0.4-SNAPSHOT.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/com.googlecode.mp4parser/isoparser/1.0.4.2/ffcfce6102c0a1a253ed40cc3717f6b0f45f391d/isoparser-1.0.4.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.jboss.spec.javax.servlet/jboss-servlet-api_3.0_spec/1.0.2.Final/293b68881aebb47c7726ffb697bd292045803aec/jboss-servlet-api_3.0_spec-1.0.2.Final.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/com/googlecode/mp4parser/isoparser/1.0.4.2/isoparser-1.0.4.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/jboss/spec/javax/servlet/jboss-servlet-api_3.0_spec/1.0.2.Final/jboss-servlet-api_3.0_spec-1.0.2.Final.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.5/9783d89b8eea20a517a4afc5f979bd2882b54c44/httpclient-4.3.5.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.0.4/65e1f1b3061d663e53b86a8bf895044efbd13ed3/groovy-2.0.4.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/apache/httpcomponents/httpclient/4.3.5/httpclient-4.3.5.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.python/jython-standalone/2.5.3/fd38fa1f62dc41ec3bfef6fdab5e4a1adc1869d7/jython-standalone-2.5.3.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/codehaus/groovy/groovy/2.0.4/groovy-2.0.4.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.jruby/jruby/1.6.8/53f90b2d27ecd86a0f994ec16256a57f7eaecc81/jruby-1.6.8.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/python/jython-standalone/2.5.3/jython-standalone-2.5.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/commons-daemon/commons-daemon/1.0.15/275b3f1efc36c6a5c276440a96a489f4ff90fa8a/commons-daemon-1.0.15.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/jruby/jruby/1.6.8/jruby-1.6.8.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.apache.mina/mina-integration-ognl/2.0.8/e21572f1ead562e9231cfe4a781b5037afb77125/mina-integration-ognl-2.0.8.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/commons-daemon/commons-daemon/1.0.15/commons-daemon-1.0.15.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/ognl/ognl/3.0.5/e35387ec9e4ca6908dcf184cd4766dd1fa8838d8/ognl-3.0.5.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/apache/mina/mina-integration-ognl/2.0.8/mina-integration-ognl-2.0.8.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.1.3/3154e3dfd5b7466df8f5151a95be70584f74f76c/antlr-runtime-3.1.3.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/ognl/ognl/3.0.5/ognl-3.0.5.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/c3p0/c3p0/0.9.1.1/302704f30c6e7abb7a0457f7771739e03c973e80/c3p0-0.9.1.1.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/antlr/antlr-runtime/3.1.3/antlr-runtime-3.1.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.04/90b215f48fe42776c8c7f6e3509ec54e84fd65ef/xml-apis-1.3.04.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.2/7dede91c0c36b1265fc99c55283b90ed2be144c8/aspectjrt-1.8.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/aspectj/aspectjrt/1.8.2/aspectjrt-1.8.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/4.0/67bd266cd17adcee486b76952ece4cc85fe248b8/asm-tree-4.0.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/antlr/antlr/2.7.7/antlr-2.7.7.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/4.0/a839ec6737d2b5ba7d1878e1a596b8f58aa545d9/asm-commons-4.0.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/ow2/asm/asm-tree/4.0/asm-tree-4.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.ow2.asm/asm/4.0/659add6efc75a4715d738e73f07505246edf4d66/asm-4.0.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/ow2/asm/asm-commons/4.0/asm-commons-4.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.ow2.asm/asm-util/4.0/d7a65f54cda284f9706a750c23d64830bb740c39/asm-util-4.0.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/ow2/asm/asm/4.0/asm-4.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/4.0/1c45d52b6f6c638db13cf3ac12adeb56b254cdd7/asm-analysis-4.0.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/ow2/asm/asm-util/4.0/asm-util-4.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/javassist/javassist/3.11.0.GA/2c00105734a57e9ee4f27e4b17cd43200e5f0ff8/javassist-3.11.0.GA.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/ow2/asm/asm-analysis/4.0/asm-analysis-4.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.antlr/stringtemplate/3.2/6fe2e3bb57daebd1555494818909f9664376dd6c/stringtemplate-3.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/javassist/javassist/3.11.0.GA/javassist-3.11.0.GA.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/antlr/stringtemplate/3.2/stringtemplate-3.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/net.sf.ehcache/ehcache-core/2.6.9/e892585cc2cf95d46a2533df438a1d3323034ae8/ehcache-core-2.6.9.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/gradle_lib/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/net/sf/ehcache/ehcache-core/2.6.9/ehcache-core-2.6.9.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/java/mavenlib/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 	</wb-module>
