@@ -4,20 +4,11 @@
    xmlns="http://java.sun.com/xml/ns/j2ee"
    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<!--
-    ** For use with servlet v2.5 replace the lines above with these
-    version="2.5"
-    xmlns="http://java.sun.com/xml/ns/javaee"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
--->
+ 
 	<display-name>R5</display-name>
 
-	<context-param>
-		<param-name>webAppRootKey</param-name>
-		<param-value>/r5</param-value>
-	</context-param>
-	
+	<display-name>r5</display-name>
+
 	<context-param>
 		<param-name>globalScope</param-name>
 		<param-value>default</param-value>
@@ -29,15 +20,22 @@
 	</context-param>
 
 	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<!-- <param-value>classpath:beanRefContext.xml,classpath:red5.xml,</param-value> -->
-		<param-value>classpath:spring/*.xml</param-value>
+		<param-name>webAppRootKey</param-name>
+		<param-value>r5</param-value>
 	</context-param>
-<!-- 
-   <listener>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>WEB-INF/classes/*-web.xml</param-value>
+	</context-param>
+
+ 	<listener>
+	    <listener-class>com.gxkj.red5.listeners.Red5InitListener</listener-class>
+	 </listener>
+	<listener>
 		<listener-class>org.red5.server.war.WarLoaderServlet</listener-class>
 	</listener>
- -->
+
     <listener>
         <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
     </listener>
@@ -83,7 +81,13 @@
 		<servlet-name>rtmpt</servlet-name>
 		<url-pattern>/close/*</url-pattern>
 	</servlet-mapping>
-	
+
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+	</welcome-file-list>
+
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>Forbidden</web-resource-name>
@@ -107,6 +111,9 @@
 		</web-resource-collection>
 		<auth-constraint />
 	</security-constraint>
+	
+ 
+	 
 
 </web-app>
 

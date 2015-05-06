@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
-	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-	    <property name="location" value="/WEB-INF/red5-web.properties" />
-	</bean>
+
     <!-- ROOT web context -->
 
     <bean
-        id="web.context.r5"
+        id="web.context"
         class="org.red5.server.Context" >
 
         <property
@@ -28,7 +26,7 @@
     </bean>
 
     <bean
-        id="web.scope.r5"
+        id="web.scope"
         class="org.red5.server.WebScope"
         init-method="register" >
 
@@ -42,7 +40,7 @@
 
         <property
             name="context"
-            ref="web.context.r5" />
+            ref="web.context" />
 
         <property
             name="handler"
@@ -50,13 +48,11 @@
 
         <property
             name="contextPath"
-            value="${webapp.contextPath}" />
+            value="/r5" />
 
         <property
             name="virtualHosts"
-            value="${webapp.virtualHosts}" />
+            value="localhost,127.0.0.1" />
     </bean>
-    
-    <bean id="web.handler.chapter2"  class="com.gxkj.red5.applications.NewTaoBaoApplication" singleton="true" /> 
 
 </beans>
