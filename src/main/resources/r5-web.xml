@@ -27,7 +27,7 @@
 
     <bean
         id="web.scope"
-        class="org.red5.server.WebScope"
+        class="org.red5.server.scope.WebScope"
         init-method="register" >
 
         <property

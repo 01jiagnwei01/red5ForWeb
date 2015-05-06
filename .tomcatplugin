@@ -65,7 +65,7 @@
         <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.9/f7c71870af3c344108412b745c8d13f5defffab5/jcl-over-slf4j-1.7.9.jar</webClassPathEntry>
         <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.9/ed78d66f1e5cb6ee901dc4810d0b96ad557fdc12/jul-to-slf4j-1.7.9.jar</webClassPathEntry>
         <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.9/cee023442a5c5c5735f5262ec0aae5d21c276104/log4j-over-slf4j-1.7.9.jar</webClassPathEntry>
-        <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.9/872ec63b41181e29ad5a3723f1417356e2d2c0f2/slf4j-api-1.7.9.jar</webClassPathEntry>
+        <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.12/8e20852d05222dc286bf1c71d78d0531e177c317/slf4j-api-1.7.12.jar</webClassPathEntry>
         <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.6.RELEASE/686c13ba57d9423dede9c5d580dcadc5c67a2761/spring-aop-4.1.6.RELEASE.jar</webClassPathEntry>
         <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.6.RELEASE/ce2d409d470948f11fad41ffdf37dcff4d28cd7c/spring-beans-4.1.6.RELEASE.jar</webClassPathEntry>
         <webClassPathEntry>D:/java/gradle_lib/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.6.RELEASE/9beaafd3f01cd377e36a2b1a9aed7c2c87111165/spring-context-support-4.1.6.RELEASE.jar</webClassPathEntry>

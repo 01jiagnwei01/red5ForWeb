@@ -155,7 +155,7 @@ org.red5.server.persistence.FilePersistence
         </property>
     </bean>
     <!-- Use injection to set the keyframe cache for FLV files -->
-
+<!-- 
     <bean
         id="flvreader.impl"
         class="org.red5.io.flv.impl.MyFLVReader" >
@@ -163,37 +163,31 @@ org.red5.server.persistence.FilePersistence
             <ref bean="keyframe.cache" />
         </property>
     </bean>
+   -->
+    <bean id="mp4reader.impl" class="org.red5.io.mp4.impl.MP4Reader"/>
     <!-- Use injection to set the keyframe cache for MP3 files -->
 
     <bean
         id="mp3reader.impl"
         class="org.red5.io.mp3.impl.MP3Reader" >
-
         <property name="frameCache" >
-
             <ref bean="keyframe.cache" />
         </property>
     </bean>
     <!-- Use injection to set the buffer type for reading FLV files -->
 
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean" >
-
         <property name="staticMethod" >
-            <value>
-				org.red5.io.flv.impl.MyFLVReader.setBufferType            </value>
+            <value>org.red5.io.flv.impl.MyFLVReader.setBufferType</value>
         </property>
         <!-- Three buffer types are available 'auto', 'heap', and 'direct' -->
-
-        <property
-            name="arguments"
-            value="auto" />
+        <property   name="arguments"  value="auto" />
     </bean>
     <!-- Use injection to set the buffer size for reading FLV files -->
 
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean" >
         <property name="staticMethod" >
-            <value>
-				org.red5.io.flv.impl.MyFLVReader.setBufferSize            </value>
+            <value>org.red5.io.flv.impl.MyFLVReader.setBufferSize</value>
         </property>
         <!-- Three buffer types are available 'auto', 'heap', and 'direct' -->
 
