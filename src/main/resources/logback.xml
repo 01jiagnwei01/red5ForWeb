@@ -9,55 +9,27 @@
         class="ch.qos.logback.core.ConsoleAppender" >
 
         <filter class="ch.qos.logback.classic.filter.LevelFilter" >
-
             <level>INFO</level>
-
-            <onMatch>
-ACCEPT
-            </onMatch>
-
-            <onMismatch>
-DENY
-            </onMismatch>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
         </filter>
 
         <layout class="ch.qos.logback.classic.PatternLayout" >
 
-            <Pattern>
-			%date [%thread] %-5level %logger - %msg%n
-            </Pattern>
+            <Pattern>%date [%thread] %-5level %logger - %msg%n</Pattern>
         </layout>
     </appender>
 
     <appender
         name="FILE"
         class="ch.qos.logback.core.FileAppender" >
-
-        <File>
-../logs/red5.log
-        </File>
-
-        <Append>
-false
-        </Append>
-
-        <Encoding>
-UTF-8
-        </Encoding>
-
-        <BufferedIO>
-false
-        </BufferedIO>
-
-        <ImmediateFlush>
-true
-        </ImmediateFlush>
-
+        <File>../logs/red5.log</File>
+        <Append>false</Append>
+        <Encoding>UTF-8</Encoding>
+        <BufferedIO>false</BufferedIO>
+        <ImmediateFlush>true</ImmediateFlush>
         <layout class="ch.qos.logback.classic.PatternLayout" >
-
-            <Pattern>
-				%date [%thread] %-5level %logger{35} - %msg%n
-            </Pattern>
+            <Pattern>%date [%thread] %-5level %logger{35} - %msg%n</Pattern>
         </layout>
     </appender>
 
@@ -65,41 +37,20 @@ true
         name="ERRORFILE"
         class="ch.qos.logback.core.FileAppender" >
 
-        <File>
-../logs/error.log
-        </File>
-
-        <Append>
-false
-        </Append>
-
-        <Encoding>
-UTF-8
-        </Encoding>
-
-        <BufferedIO>
-false
-        </BufferedIO>
-
-        <ImmediateFlush>
-true
-        </ImmediateFlush>
-
+        <File>../logs/error.log</File>
+        <Append>false</Append>
+        <Encoding>UTF-8</Encoding>
+        <BufferedIO>false</BufferedIO>
+		<ImmediateFlush>true</ImmediateFlush>
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter" >
-
-            <level>
-WARN
-            </level>
+			<level>WARN</level>
         </filter>
-
         <layout class="ch.qos.logback.classic.PatternLayout" >
-
             <Pattern>
-				%date [%thread] %-5level %logger{35} - %msg%n
-            </Pattern>
+				%date [%thread] %-5level %logger{35} - %msg%n            </Pattern>
+            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
         </layout>
     </appender>
-
     <root>
 
         <level value="DEBUG" />
@@ -261,6 +212,9 @@ WARN
 
         <level value="DEBUG" />
     </logger>
+     <logger name="org.springframework" level="WARN"/>
+    <logger name="com.opensymphony" level="WARN"/>
+    <logger name="org.apache" level="WARN"/>
     <!-- Red5 demos -->
 
     <logger name="org.red5.server.webapp.oflaDemo" >
