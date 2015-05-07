@@ -15,7 +15,7 @@
 	</bean>	
 
 	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:/build_war.properties" />
+		<property name="location" value="classpath:/red5.properties" />
 	</bean>
     <!-- RTMP Handler -->
 
