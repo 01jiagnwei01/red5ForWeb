@@ -8,7 +8,7 @@
         name="CONSOLE"
         class="ch.qos.logback.core.ConsoleAppender" >
         <filter class="ch.qos.logback.classic.filter.LevelFilter" >
-            <level>INFO</level>
+            <level>DEBUG</level>
             <onMatch>ACCEPT</onMatch>
             <onMismatch>DENY</onMismatch>
         </filter>
@@ -52,34 +52,34 @@
         <appender-ref ref="FILE" />
         <appender-ref ref="ERRORFILE" />
     </root>
-    <!-- WARN,DEBUG,INFO -->
+    <!-- WARN,DEBUG,DEBUG -->
     <!-- Red5 -->
 	<logger name="org.apache.catalina.loader" level="DEBUG"></logger>
-    <logger name="org.red5.io" level="INFO"></logger>
+    <logger name="org.red5.io" level="DEBUG"></logger>
     <logger name="org.red5.server.BaseConnection"  level="DEBUG"></logger>
-    <logger name="org.red5.server.Client" level="INFO"></logger>
-    <logger name="org.red5.server.Standalone" level="INFO"></logger>
-    <logger name="org.red5.server.api.stream.support" level="INFO"></logger>
+    <logger name="org.red5.server.Client" level="DEBUG"></logger>
+    <logger name="org.red5.server.Standalone" level="DEBUG"></logger>
+    <logger name="org.red5.server.api.stream.support" level="DEBUG"></logger>
     <logger name="org.red5.server.cache" level="WARN"></logger>
     <logger name="org.red5.server.jetty.Red5WebPropertiesConfiguration"   level="WARN"></logger>
-    <logger name="org.red5.server.jmx"  level="INFO"></logger>
+    <logger name="org.red5.server.jmx"  level="DEBUG"></logger>
  
 
-    <logger name="org.red5.server.messaging.InMemoryPushPushPipe" level="INFO"></logger>
+    <logger name="org.red5.server.messaging.InMemoryPushPushPipe" level="DEBUG"></logger>
     
-    <logger name="org.red5.server.net" level="INFO" ></logger>
+    <logger name="org.red5.server.net" level="DEBUG" ></logger>
     <logger name="org.red5.server.net.servlet.RTMPTServlet"  level="WARN"> </logger>
     <logger name="org.red5.server.net.servlet"   level="WARN" />
-    <logger name="org.red5.server.net.proxy" level="INFO" />
+    <logger name="org.red5.server.net.proxy" level="DEBUG" />
     <logger name="org.red5.server.net.remoting"  level="WARN" />
     <logger name="org.red5.server.net.rtmp.RTMPMinaConnection" level="DEBUG"> </logger>
     <logger name="org.red5.server.net.rtmp.RTMPHandler"  level="DEBUG"></logger>
     <logger name="org.red5.server.net.rtmp.BaseRTMPHandler" level="DEBUG"></logger>
     
-    <logger name="org.red5.server.net.rtmp.codec"  level="INFO" /> 
+    <logger name="org.red5.server.net.rtmp.codec"  level="DEBUG" /> 
     <logger name="org.red5.server.net.rtmp.RTMPMinaIoHandler"  level="OFF" />
-    <logger name="org.red5.server.net.rtmp.RTMPMinaTransport"  level="INFO" /> 
-    <logger name="org.red5.server.net.rtmp.status" alue="INFO" />
+    <logger name="org.red5.server.net.rtmp.RTMPMinaTransport"  level="DEBUG" /> 
+    <logger name="org.red5.server.net.rtmp.status" alue="DEBUG" />
     <logger name="org.red5.server.net.rtmpt"   level="WARN" /> 
     <logger name="org.red5.server.persistence"  level  ="WARN" />
     <logger name="org.red5.server.pooling.ThreadObjectFactory" level  ="WARN" />
@@ -92,9 +92,9 @@
     <logger name="org.apache" level="WARN"/>
     
 
-    <logger name="org.red5.server.service" level="INFO"></logger>
+    <logger name="org.red5.server.service" level="DEBUG"></logger>
     <logger name="org.red5.server.so" level="WARN"></logger>
-    <logger name="org.red5.server.stream" level="INFO"></logger>
+    <logger name="org.red5.server.stream" level="DEBUG"></logger>
     <logger name="org.red5.server.stream.consumer"  level="WARN"></logger>
  
  
@@ -114,26 +114,26 @@
     <logger name="httpclient"  level="WARN"></logger>
  
     <!-- Apache catalina / tomcat -->
-    <logger name="org.apache.catalina"  level="INFO"></logger>
-    <logger name="org.apache.catalina.authenticator" level="INFO"></logger>
+    <logger name="org.apache.catalina"  level="DEBUG"></logger>
+    <logger name="org.apache.catalina.authenticator" level="DEBUG"></logger>
     <logger name="org.apache.catalina.realm" level="WARN"></logger>
     <logger name="org.apache.catalina.session" level="WARN"></logger>
-    <logger name="org.apache.jasper"  level="INFO"></logger>
+    <logger name="org.apache.jasper"  level="DEBUG"></logger>
  
     
     <!-- Spring -->
-    <logger name="org.springframework" level="INFO"></logger>
-    <logger name="org.springframework.beans.factory" level="INFO"></logger>
+    <logger name="org.springframework" level="DEBUG"></logger>
+    <logger name="org.springframework.beans.factory" level="DEBUG"></logger>
     <logger name="org.springframework.beans.factory.xml" level="WARN"></logger>
     <logger name="org.springframework.ui.context.support" level="WARN"></logger>
-    <logger name="org.springframework.web.context"  level="INFO"></logger>
+    <logger name="org.springframework.web.context"  level="DEBUG"></logger>
  
 
     <logger name="org.springframework.web.context.support" level="WARN"></logger>
     <logger name="org.quartz"  level="WARN"></logger>
  
     <!-- Caching -->
-    <logger name="net.sf.ehcache"  level="INFO"></logger>
+    <logger name="net.sf.ehcache"  level="DEBUG"></logger>
     <logger name="com.whirlycott.cache" level="WARN"></logger>
     <logger name="com.whirlycott.cache.policy" level="WARN"></logger>
  
