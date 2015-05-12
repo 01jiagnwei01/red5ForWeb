@@ -39,8 +39,9 @@
 			<encoder>
 				<pattern>%date [%thread] %-5level %logger{35} - %msg%n</pattern>
 				<charset>UTF-8</charset> <!-- 此处设置字符集 -->
+				<ImmediateFlush>true</ImmediateFlush>
 			</encoder>
-			 <ImmediateFlush>true</ImmediateFlush>
+			 
 	</appender>
 
      
@@ -55,6 +56,9 @@
         <appender-ref ref="ERRORFILE" />
     </root>
     <!-- Red5 -->
+	<logger name="org.apache.catalina.loader" >
+        <level value="DEBUG" />
+    </logger>
 
     <logger name="org.red5.io" >
 
@@ -201,10 +205,8 @@
         <level value="WARN" />
     </logger>
 
-    <logger name="org.red5.server.war" >
-
-        <level value="DEBUG" />
-    </logger>
+    <logger name="org.red5.server.war"  level="DEBUG"></logger>
+	<logger name="org.apache.catalina.loader" level="DEBUG"></logger>
      <logger name="org.springframework" level="WARN"/>
     <logger name="com.opensymphony" level="WARN"/>
     <logger name="org.apache" level="WARN"/>
