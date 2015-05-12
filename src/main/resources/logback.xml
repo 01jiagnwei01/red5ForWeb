@@ -65,10 +65,7 @@
         <level value="INFO" />
     </logger>
 
-    <logger name="org.red5.server" >
-
-        <level value="WARN" />
-    </logger>
+    <logger name="org.red5.server"  level="DEBUG"></logger>
 
     <logger name="org.red5.server.Client" >
 
@@ -115,75 +112,32 @@
         <level value="WARN" />
     </logger>
 
-    <logger name="org.red5.server.net.servlet" >
+    <logger name="org.red5.server.net.servlet"   level="WARN" />
+    <logger name="org.red5.server.net.proxy" level="INFO" />
+    
 
-        <level value="WARN" />
-    </logger>
+    <logger name="org.red5.server.net.remoting"  level="WARN" />
 
-    <logger name="org.red5.server.net.proxy" >
+    <logger name="org.red5.server.net.rtmp.RTMPMinaConnection" level="DEBUG"> </logger>
+    <logger name="org.red5.server.net.rtmp.RTMPHandler"  level="DEBUG"></logger>
+    <logger name="org.red5.server.net.rtmp.BaseRTMPHandler" level="DEBUG"></logger>
+ 
 
-        <level value="INFO" />
-    </logger>
-
-    <logger name="org.red5.server.net.remoting" >
-
-        <level value="WARN" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmp" >
-
-        <level value="WARN" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmp.RTMPHandler" >
-
-        <level value="OFF" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmp.BaseRTMPHandler" >
-
-        <level value="OFF" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmp.codec" >
-
-        <level value="INFO" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmp.RTMPMinaIoHandler" >
-
-        <level value="OFF" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmp.RTMPMinaTransport" >
-
-        <level value="INFO" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmp.status" >
-
-        <level value="INFO" />
-    </logger>
-
-    <logger name="org.red5.server.net.rtmpt" >
-
-        <level value="WARN" />
-    </logger>
-
-    <logger name="org.red5.server.persistence" >
-
-        <level value="WARN" />
-    </logger>
-
-    <logger name="org.red5.server.pooling.ThreadObjectFactory" >
-
-        <level value="WARN" />
-    </logger>
-
-    <logger name="org.red5.server.script" >
-
-        <level value="WARN" />
-    </logger>
+    <logger name="org.red5.server.net.rtmp.codec"  level="INFO" /> 
+    <logger name="org.red5.server.net.rtmp.RTMPMinaIoHandler"  level="OFF" />
+    <logger name="org.red5.server.net.rtmp.RTMPMinaTransport"  level="INFO" /> 
+    <logger name="org.red5.server.net.rtmp.status" alue="INFO" />
+    <logger name="org.red5.server.net.rtmpt"   level="WARN" /> 
+    <logger name="org.red5.server.persistence"  level  ="WARN" />
+    <logger name="org.red5.server.pooling.ThreadObjectFactory" level  ="WARN" />
+    <logger name="org.red5.server.script"  level ="WARN" />
+    
+     <logger name="org.red5.server.war"  level="DEBUG"></logger>
+	<logger name="org.apache.catalina.loader" level="DEBUG"></logger>
+     <logger name="org.springframework" level="WARN"/>
+    <logger name="com.opensymphony" level="WARN"/>
+    <logger name="org.apache" level="WARN"/>
+    
 
     <logger name="org.red5.server.service" >
 
@@ -205,11 +159,7 @@
         <level value="WARN" />
     </logger>
 
-    <logger name="org.red5.server.war"  level="DEBUG"></logger>
-	<logger name="org.apache.catalina.loader" level="DEBUG"></logger>
-     <logger name="org.springframework" level="WARN"/>
-    <logger name="com.opensymphony" level="WARN"/>
-    <logger name="org.apache" level="WARN"/>
+   
     <!-- Red5 demos -->
 
     <logger name="org.red5.server.webapp.oflaDemo" >
