@@ -89,7 +89,7 @@ a {
   jwplayer('mediaspace').setup({
     'flashplayer': '<%=request.getContextPath() %>/resources/red5/player.swf',
     'file': 'Avengers2.mp4',
-    'streamer': 'rtmp://localhost/r5',
+    'streamer': 'rtmp://127.0.0.1:1935/r5',
     'controlbar': 'bottom',
     'width': '848',
     'height': '360'
