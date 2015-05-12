@@ -31,14 +31,37 @@
         <property name="defaultServerBandwidth" value="${rtmp.default_server_bandwidth}" />
         <!-- Default client bandwidth per connection -->
         <property name="defaultClientBandwidth" value="${rtmp.default_client_bandwidth}" />
-        <!-- Client bandwidth limit type: 0 = hard, 1 = soft, 2 = dynamic -->
+        <!--客户端带宽 Client bandwidth limit type: 0 = hard, 1 = soft, 2 = dynamic -->
         <property name="limitType" value="${rtmp.client_bandwidth_limit_type}" />
-        <!-- Bandwidth detection. If "false" the server will NOT initiate a check -->
+        <!--带宽检查 Bandwidth detection. If "false" the server will NOT initiate a check -->
         <property name="bandwidthDetection" value="${rtmp.bandwidth_detection}" />
-        <!-- Maximum time allowed for a single RTMP packet to be processed -->
+        <!--最大允许处理时间 Maximum time allowed for a single RTMP packet to be processed -->
         <property name="maxHandlingTimeout" value="${rtmp.max_handling_time}" />
         <!-- Specify the size of queue that will trigger audio packet dropping, disabled if it's 0 -->
          <property name="executorQueueSizeToDropAudioPackets" value="${rtmp.executor.queue_size_to_drop_audio_packets}" />
 	</bean>
+	<!-- RTMPT Connection -->
+	<bean id="rtmptConnection" scope="prototype" class="org.red5.server.net.rtmpt.RTMPTConnection">
+        <!-- Executor for scheduled tasks -->
+        <property name="scheduler" ref="rtmpScheduler" />
+        <!-- Executor for incoming messages -->
+        <property name="executor" ref="messageExecutor" /> 
+		<!-- Ping clients every X ms. Set to 0 to disable ghost detection code. -->
+		<property name="pingInterval" value="${rtmpt.ping_interval}" />
+		<!-- Disconnect client after X ms of not responding. -->
+		<property name="maxInactivity" value="${rtmpt.max_inactivity}" />
+		<!-- Max. time in milliseconds to wait for a valid handshake. -->
+		<property name="maxHandshakeTimeout" value="${rtmpt.max_handshake_time}" />
+		<!-- Maximum incoming messages to process at a time per client -->
+		<property name="maxInMessagesPerProcess" value="${rtmpt.max_in_msg_process}" />
+		<!-- Maximum amount of time in milliseconds to wait before allowing an offer to fail on incoming or outgoing queues -->
+		<property name="maxQueueOfferTime" value="${rtmpt.max_queue_offer_time}" />
+		<!-- Maximum offer attempts before failing on incoming or outgoing queues -->
+		<property name="maxQueueOfferAttempts" value="${rtmpt.max_queue_offer_attempts}" />
+		<!-- Maximum time allowed for a single RTMP packet to be processed -->
+        <property name="maxHandlingTimeout" value="${rtmp.max_handling_time}" />
+        <!-- Specify the size of queue that will trigger audio packet dropping, disabled if it's 0 -->
+         <property name="executorQueueSizeToDropAudioPackets" value="${rtmp.executor.queue_size_to_drop_audio_packets}" />
+	</bean>	
 
 </beans>
