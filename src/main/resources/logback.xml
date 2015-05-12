@@ -48,13 +48,11 @@
     <root>
 
         <level value="DEBUG" />
-
         <appender-ref ref="CONSOLE" />
-
         <appender-ref ref="FILE" />
-
         <appender-ref ref="ERRORFILE" />
     </root>
+    <!-- WARN,DEBUG,INFO -->
     <!-- Red5 -->
 	<logger name="org.apache.catalina.loader" level="DEBUG"></logger>
     <logger name="org.red5.io" level="INFO"></logger>
@@ -68,11 +66,11 @@
  
 
     <logger name="org.red5.server.messaging.InMemoryPushPushPipe" level="INFO"></logger>
+    
     <logger name="org.red5.server.net" level="INFO" ></logger>
     <logger name="org.red5.server.net.servlet.RTMPTServlet"  level="WARN"> </logger>
     <logger name="org.red5.server.net.servlet"   level="WARN" />
     <logger name="org.red5.server.net.proxy" level="INFO" />
-    
     <logger name="org.red5.server.net.remoting"  level="WARN" />
     <logger name="org.red5.server.net.rtmp.RTMPMinaConnection" level="DEBUG"> </logger>
     <logger name="org.red5.server.net.rtmp.RTMPHandler"  level="DEBUG"></logger>
