@@ -26,6 +26,9 @@
         <property name="dropLiveFuture" value="${rtmpt.encoder_drop_live_future}" />
 	</bean>
 	
+	<!-- Remoting calls codec factory -->
+	<bean id="remotingCodecFactory" class="org.red5.server.net.remoting.codec.RemotingCodecFactory" autowire="byType" init-method="init"/>
+	
 	
 
 </beans>
