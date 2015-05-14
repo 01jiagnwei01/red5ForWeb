@@ -12,3 +12,14 @@ java.io.tmpdir							Users\\Default\\AppData\\Red5 或者是\\AppData\\localLow
 useLogback								默认值是：true
 加载spring配置文件classpath:/red5.xml ,变量名称为：root
 root.refresh();
+
+
+3shutdown
+
+
+4:org.red5.server.Server
+	schedulingService
+	
+5:quartz框架
+
+

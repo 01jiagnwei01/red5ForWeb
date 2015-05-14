@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<button onclick="backFn()">后退</button>
+demo:1：北美->挪威—>后退—>后退<br/>
+demo:2：北美->后退<br/>
+<div id="dazhou_div"  >
+<img src="./dazhou.jpg" border="0" usemap="#dazhoumap" alt="大洲" />
+<map name="dazhoumap" id="dazhoumap">
+<area
+shape="rect"
+coords="97,68,125,80"
+href ="javascript:showGuojia()"
+alt="Venus" />
+</map>
+</div>
+
+<div id="guojia_div" style="display: none">
+	<img src="./guojia.png" border="0" usemap="#guojiamap" alt="国家" />
+	<map name="guojiamap" id="guojiamap">
+	<area
+	shape="rect"
+	coords="205,90,229,105"
+	href ="javascript:showJuyuan()"
+	alt="Venus" />
+	</map>
+</div>
+
+<div id="juyuan_div" style="display: none">
+	<img src="./weizhi.jpg" border="0"   alt="剧院" />
+</div>
+
+<script type="text/javascript">
+	var state = 1;
+	function showGuojia(){
+		document.getElementById("dazhou_div").style.display="none";
+		document.getElementById("guojia_div").style.display="";
+		document.getElementById("juyuan_div").style.display="none";
+		state = 2;
+	}
+	function showJuyuan(){
+		document.getElementById("dazhou_div").style.display="none";
+		document.getElementById("guojia_div").style.display="none";
+		document.getElementById("juyuan_div").style.display="";
+		state = 3;
+	}
+	function backFn(){
+		if(state == 1)return;
+		if(state == 2){
+			document.getElementById("dazhou_div").style.display="";
+			document.getElementById("guojia_div").style.display="none";
+			document.getElementById("juyuan_div").style.display="none";
+			state = 1;
+			return;
+		}
+		if(state == 3){
+			document.getElementById("dazhou_div").style.display="none";
+			document.getElementById("guojia_div").style.display="";
+			document.getElementById("juyuan_div").style.display="none";
+			state = 2;
+			return;
+		}
+		
+	}
+</script>
+
+
+
+</body>
+</html>
