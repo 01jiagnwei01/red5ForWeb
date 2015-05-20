@@ -5,9 +5,13 @@ import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.quartz.JobKey;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HelloJob implements Job{
 
+	protected final  Logger logger = LoggerFactory.getLogger(getClass());
+	
 	public void execute(JobExecutionContext context)
 			throws JobExecutionException {
 		System.out.println(" hello , i am do work");
