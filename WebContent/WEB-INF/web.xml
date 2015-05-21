@@ -11,10 +11,13 @@
 	    <param-name>contextConfigLocation</param-name>
 	    <param-value>classpath:/spring2/spring-*.xml</param-value>
 	 </context-param>
-
+	
 	<listener>
         <listener-class>com.gxkj.red5.listeners.Red5InitListener</listener-class>
     </listener>
+    <listener>
+		<listener-class>org.red5.server.war.WarLoaderServlet</listener-class>
+	</listener>
    	
 	<!-- 
     <context-param>  
@@ -42,6 +45,7 @@
     <listener>
         <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
     </listener>
+    
     <!-- -->
 	<servlet>
 		<servlet-name>rtmpt</servlet-name>

@@ -34,19 +34,25 @@ public class Red5InitListener extends ContextLoaderListener  {
 		String dirAbsoultePath = dir.getAbsolutePath();
 		String classes = "classes";
 		String classpath = dirAbsoultePath.substring(0, dirAbsoultePath.indexOf(classes)+classes.length());
+		
+		servletContext = event.getServletContext();
+		String prefix = servletContext.getRealPath("/");
 		 
 		 System.setProperty("red5.root",classpath);
 		 System.setProperty("red5.config_root",String.format("%s/%s", classpath,"red5"));
 		 System.setProperty("red5.deployment.type",Red5DeploymentTypes.war.toString());
 		 
+		 System.setProperty("red5.webapp.root",prefix);
+		 
 		 logger.info("set red5.root:{}",classpath);
 		 logger.info("set red5.config_root:{}", System.getProperty("red5.config_root"));
+		 
 	
 		 
-		 super.contextInitialized(event);
-		servletContext = event.getServletContext();
-		applicationContext = WebApplicationContextUtils
-				.getRequiredWebApplicationContext(servletContext);
+//		 super.contextInitialized(event);
+//		servletContext = event.getServletContext();
+//		applicationContext = WebApplicationContextUtils
+//				.getRequiredWebApplicationContext(servletContext);
 		
 	}
  
