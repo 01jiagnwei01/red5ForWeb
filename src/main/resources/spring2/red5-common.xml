@@ -22,6 +22,7 @@
 	<bean id="red5.server" class="com.gxkj.red5.server.MyServer" />
 	
 	<!-- JMX -->
+	<!-- 
     <bean id="rmiRegistry" class="org.springframework.remoting.rmi.RmiRegistryFactoryBean">
         <property name="port" value="${jmx.rmi.port}" />
         <property name="alwaysCreate" value="${jmx.registry.create}" />
@@ -36,22 +37,15 @@
         <property name="serviceUrl"
             value="service:jmx:rmi://${jmx.rmi.host}:${jmx.rmi.sport}/jndi/rmi://${jmx.rmi.host}:${jmx.rmi.port}/red5" />
         <property name="environment">
-            <!-- the following is only valid when the sun jmx implementation is used -->
             <map>
                 <entry key="java.rmi.server.hostname" value="${jmx.rmi.host}" />
                 <entry key="jmx.remote.x.access.file" value="${red5.config_root}/access.properties" />
                 <entry key="jmx.remote.x.password.file" value="${red5.config_root}/password.properties" />
-                <!-- Un-comment these next two nodes to enable SSL -->                
-                <!-- 
-                <entry key="javax.net.ssl.keyStore" value="${red5.config_root}/keystore.jmx" />
-                <entry key="javax.net.ssl.keyStorePassword" value="${jmx.keystorepass}" />
-                 -->
             </map>
         </property>
     </bean>
-   
     <context:mbean-export registration="replaceExisting" default-domain="org.red5.server"/>
-	
+	 -->
 	<!-- scope="prototype" 每次注入产生一个新的对象 -->
     <bean id="minaEncoder" class="org.red5.server.net.rtmp.codec.RTMPMinaProtocolEncoder" scope="prototype">
         <property name="baseTolerance" value="${rtmp.encoder_base_tolerance}" />
