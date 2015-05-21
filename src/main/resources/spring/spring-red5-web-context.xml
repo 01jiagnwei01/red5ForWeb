@@ -1,0 +1,53 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd 
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+  
+  <bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:/spring/red5-web.properties" />
+	</bean>
+   
+   
+	 <!-- 
+	<bean id="web.context" class="org.red5.server.Context" autowire="byType" />
+ -->
+  
+        
+	<bean id="web.scope" class="org.red5.server.scope.WebScope" init-method="register">
+		<property name="server" ref="red5.server" />
+		
+		 
+		 <property name="parent" ref="global.scope" />
+		<!--  <property name="context" ref="web.context" /> 
+		 -->
+		 
+		<property name="handler" ref="web.handler" />
+		<property name="contextPath" value="/r5" />
+		<property name="virtualHosts" value="*, localhost, localhost:80, 127.0.0.1:80" />
+	</bean>
+
+	<bean id="web.handler" class="com.gxkj.red5.applications.NewTaoBaoApplication" />
+	
+	<bean id="web.scope1" class="com.gxkj.red5.ServletWebScope" init-method="register">
+		<property name="server" ref="red5.server" />
+		
+		 <!-- 
+		 <property name="parent" ref="global.scope" />
+		 <property name="context" ref="web.context" /> 
+		 -->
+		 
+		<property name="handler" ref="web.handler" />
+		<property name="contextPath" value="/r5" />
+		<property name="virtualHosts" value="*, localhost, localhost:80, 127.0.0.1:80" />
+	</bean>
+	
+</beans>

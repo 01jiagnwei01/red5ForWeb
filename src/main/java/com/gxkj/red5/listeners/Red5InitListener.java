@@ -11,6 +11,8 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import com.gxkj.red5.enums.Red5DeploymentTypes;
+
 public class Red5InitListener extends ContextLoaderListener  {
  
 	protected final  Logger logger = LoggerFactory.getLogger(getClass());
@@ -34,7 +36,8 @@ public class Red5InitListener extends ContextLoaderListener  {
 		String classpath = dirAbsoultePath.substring(0, dirAbsoultePath.indexOf(classes)+classes.length());
 		 
 		 System.setProperty("red5.root",classpath);
-		 System.setProperty("red5.config_root",String.format("%s/%s", classpath,"conf"));
+		 System.setProperty("red5.config_root",String.format("%s/%s", classpath,"red5"));
+		 System.setProperty("red5.deployment.type",Red5DeploymentTypes.war.toString());
 		 
 		 logger.info("set red5.root:{}",classpath);
 		 logger.info("set red5.config_root:{}", System.getProperty("red5.config_root"));

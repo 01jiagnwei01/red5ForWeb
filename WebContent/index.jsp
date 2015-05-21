@@ -89,7 +89,7 @@ a {
   jwplayer('mediaspace').setup({
     'flashplayer': '<%=request.getContextPath() %>/resources/red5/player.swf',
     'file': 'Avengers2.mp4',
-    'streamer': 'rtmp://localhost/default',
+    'streamer': 'rtmp://localhost:1935/r5',
     'controlbar': 'bottom',
     'width': '848',
     'height': '360'
@@ -103,7 +103,7 @@ a {
   jwplayer('mediaspace2').setup({
     'flashplayer': '<%=request.getContextPath() %>/resources/red5/player.swf',
     'file': 'Avengers2.mp4',
-    'streamer': 'rtmpt://localhost/default/',
+    'streamer': 'rtmpt://localhost/r5/',
     'controlbar': 'bottom',
     'width': '848',
     'height': '360'
