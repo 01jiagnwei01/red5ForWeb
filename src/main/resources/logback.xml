@@ -3,7 +3,7 @@
 
   <appender class="ch.qos.logback.core.ConsoleAppender" name="CONSOLE">
     <encoder>
-      <pattern>[%p] [%thread] %logger - %msg%n</pattern>
+      <pattern>[%p] [%thread] %logger:%line - %msg%n</pattern>
     </encoder>
   </appender>
    

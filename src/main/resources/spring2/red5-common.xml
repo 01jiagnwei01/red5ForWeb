@@ -237,7 +237,10 @@
 	<bean id="clientBroadcastStream" scope="prototype" lazy-init="true" class="org.red5.server.stream.ClientBroadcastStream">
         <property name="automaticRecording" value="${broadcaststream.auto.record}"/><!-- false -->
 	</bean>
-	<!-- 
+	<!-- -->
 	<import resource="classpath:/spring2/red5-default.xml"/>
- -->
+<!-- 
+	<import resource="classpath:/spring2/red5-web.xml"/>
+		-->
+ 
 </beans>

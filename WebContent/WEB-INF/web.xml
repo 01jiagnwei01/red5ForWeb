@@ -18,16 +18,14 @@
     <listener>
 		<listener-class>org.red5.server.war.WarLoaderServlet</listener-class>
 	</listener>
-   	
+   	<context-param>  
+        <param-name>globalScope</param-name>  
+        <param-value>default</param-value>  
+    </context-param> 
 	<!-- 
     <context-param>  
         <param-name>webAppRootKey</param-name>  
         <param-value>/r5</param-value>  
-    </context-param>  
-      
-    <context-param>  
-        <param-name>globalScope</param-name>  
-        <param-value>default</param-value>  
     </context-param>  
   
     <context-param>  

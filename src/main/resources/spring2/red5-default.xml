@@ -24,9 +24,9 @@
 	</bean>
 	
 	<bean id="global.mappingStrategy" class="org.red5.server.MappingStrategy" />
-	<!-- 
+	<!-- 	-->
 	<bean id="global.context" class="org.red5.server.Context" autowire="byType" />
- 	-->
+ 
 	<bean id="global.handler" class="org.red5.server.CoreHandler" autowire="byType" />
 			
 	<bean id="global.scope" class="org.red5.server.scope.GlobalScope" init-method="register">
