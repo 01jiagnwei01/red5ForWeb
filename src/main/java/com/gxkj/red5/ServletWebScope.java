@@ -9,4 +9,10 @@ public class ServletWebScope extends WebScope implements ServletContextAware,Ini
 	public void register() {
 		super.register();
 	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
 }

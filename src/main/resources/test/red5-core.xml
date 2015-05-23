@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd                            
+	http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.1.xsd">
+
+	<!-- DO NOT FORMAT THIS FILE IN ECLIPSE -->
+	<bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="java.net.SocketAddress" value="org.apache.mina.integration.beans.InetSocketAddressEditor" />
+			</map>
+		</property>
+	</bean>	
+	
+	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:/red5.properties" />
+	</bean>
+	
+	<!-- RTMP -->
+    <bean id="rtmpScheduler" scope="prototype" class="org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler">
+        <property name="poolSize" value="${rtmp.scheduler.pool_size}" />  
+	</bean>        
+	        
+	<bean id="messageExecutor" scope="prototype" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">  
+        <property name="corePoolSize" value="1" />  <!-- 线程池维护线程的最少数量 -->
+	    <property name="maxPoolSize" value="1" />  <!--  线程池维护线程的最大数量 -->
+	    <property name="queueCapacity" value="${rtmp.executor.queue_capacity}" /> <!-- 线程池所使用的缓冲队列 -->
+	</bean>     
+    
+    <!-- RTMP connection manager --> 
+    <bean id="rtmpConnManager" class="org.red5.server.net.rtmp.RTMPConnManager" />
+	
+	<!-- RTMPT -->
+	
+	<!-- RTMPT Handler -->
+	<bean id="rtmptHandler" class="org.red5.server.net.rtmpt.RTMPTHandler" autowire="byType">
+		<property name="codecFactory" ref="rtmptCodecFactory" />
+	</bean>
+	
+	<!-- Use injection to store RTMPT handler in servlet -->
+	<bean id="rtmptServlet"	class="org.red5.server.net.rtmpt.RTMPTServlet">
+        <property name="manager" ref="rtmpConnManager" />
+		<property name="handler" ref="rtmptHandler" />
+		<!-- Increasing this value results in better stream performance, but also increases the latency -->
+		<property name="targetResponseSize" value="${rtmpt.target_reponse_size}" />
+		<!-- Response for /fcs/ident2 requests -->
+		<!--
+		<property name="ident2" value="127.0.0.1" />
+		-->
+	</bean>
+	<!-- RTMPTConnection通过servlet连接时使用 -->
+	<!-- RTMPT Connection -->
+	<bean id="rtmptConnection" scope="prototype" class="org.red5.server.net.rtmpt.RTMPTConnection">
+        <!-- Executor for scheduled tasks -->
+        <property name="scheduler" ref="rtmpScheduler" />
+        <!-- Executor for incoming messages -->
+        <property name="executor" ref="messageExecutor" /> 
+		<!-- Ping clients every X ms. Set to 0 to disable ghost detection code. -->
+		<property name="pingInterval" value="${rtmpt.ping_interval}" />
+		<!-- Disconnect client after X ms of not responding. -->
+		<property name="maxInactivity" value="${rtmpt.max_inactivity}" />
+		<!-- Max. time in milliseconds to wait for a valid handshake. -->
+		<property name="maxHandshakeTimeout" value="${rtmpt.max_handshake_time}" />
+		<!-- Maximum incoming messages to process at a time per client -->
+		<property name="maxInMessagesPerProcess" value="${rtmpt.max_in_msg_process}" />
+		<!-- Maximum amount of time in milliseconds to wait before allowing an offer to fail on incoming or outgoing queues -->
+		<property name="maxQueueOfferTime" value="${rtmpt.max_queue_offer_time}" />
+		<!-- Maximum offer attempts before failing on incoming or outgoing queues -->
+		<property name="maxQueueOfferAttempts" value="${rtmpt.max_queue_offer_attempts}" />
+		<!-- Maximum time allowed for a single RTMP packet to be processed -->
+        <property name="maxHandlingTimeout" value="${rtmp.max_handling_time}" />
+        <!-- Specify the size of queue that will trigger audio packet dropping, disabled if it's 0 -->
+         <property name="executorQueueSizeToDropAudioPackets" value="${rtmp.executor.queue_size_to_drop_audio_packets}" />
+	</bean>
+		
+   
+</beans>

@@ -49,10 +49,10 @@ public class Red5InitListener extends ContextLoaderListener  {
 		 
 	
 		 
-//		 super.contextInitialized(event);
-//		servletContext = event.getServletContext();
-//		applicationContext = WebApplicationContextUtils
-//				.getRequiredWebApplicationContext(servletContext);
+		 super.contextInitialized(event);
+		servletContext = event.getServletContext();
+		applicationContext = WebApplicationContextUtils
+				.getRequiredWebApplicationContext(servletContext);
 		
 	}
  

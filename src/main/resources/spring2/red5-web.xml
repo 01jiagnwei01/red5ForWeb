@@ -5,15 +5,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd                            
 	http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.1.xsd">
 	
+	<bean id="web.context" class=" com.gxkj.red5.MyContext" autowire="byType" />
+	
 	  <bean
         id="web.scope"
         class="org.red5.server.scope.WebScope" init-method="register" >
 
        <property name="server" ref="red5.server" />
 		<property name="parent" ref="global.scope" />
-		<!-- 
+		<!-- -->
 		<property name="context" ref="web.context" />
-		 -->
+		 
 		<property name="handler" ref="global.handler" />
 		<property name="contextPath" value="/r5" />
 		<property name="virtualHosts" value="*,localhost, localhost:80, 127.0.0.1:80" />

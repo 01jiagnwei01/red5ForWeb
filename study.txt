@@ -1,0 +1,6 @@
+﻿参考文章：
+http://gongminrui.iteye.com/blog/1717330
+Red5源码路径
+https://github.com/Red5/
+论坛
+http://red5.fmsx.org/
